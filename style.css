@@ -1,0 +1,472 @@
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: montserrat;
+}
+
+/* Header navigation */
+nav {
+    background: #1c5c96;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+label.logo {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2980b9;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Card styles */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero section styles */
+.hero {
+    background: url('https://pxhere.com/en/photo/1568213') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Testimonial section styles */
+.testimonials {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #1c5c96;
+}
+
+/* Explore living in Japan section styles */
+.explore-living-in-japan {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+.explore-living-in-japan h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1c5c96;
+}
+
+.explore-living-in-japan p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Featured job listings section styles */
+.featured-jobs {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.featured-jobs h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #1c5c96;
+}
+
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.job-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.job-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.job-card-content {
+    padding: 20px;
+}
+
+.job-card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1c5c96;
+}
+
+.job-card-content p {
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+/* About Us section styles */
+.about-us {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+.about-us h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #1c5c96;
+}
+
+.about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+    color: #555555;
+}
+
+/* Search Bar section styles */
+.search-bar {
+    background: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 70%;
+    max-width: 500px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background: #1c5c96;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background: #2980b9;
+}
+
+/* Why Work in Japan section styles */
+.why-work-in-japan {
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+
+.why-work-in-japan h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #1c5c96;
+}
+
+.reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reason {
+    flex-basis: calc(33.33% - 20px);
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.reason h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1c5c96;
+}
+
+.reason p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+/* Contact Us section styles */
+.contact-us {
+    background: #1c5c96;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.form-group {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.form-group input,
+textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+textarea:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background: #ffd700;
+    color: #333333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background: #ffc107;
+}
+
+/* Footer section styles */
+footer {
+    background: #1c5c96;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        padding: 0 10px;
+    }
+
+    label.logo {
+        font-size: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 7px 10px;
+    }
+
+    .job-listings,
+    .image-grid,
+    .reasons {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .search-bar input {
+        width: 80%;
+    }
+
+    .reason {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .reason {
+        flex-basis: 100%;
+    }
+
+    .job-listings,
+    .image-grid,
+    .reasons {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
